@@ -111,9 +111,18 @@ exact procedure and output format live there.
 ## Progress — the learning log
 
 Persistence is what makes this feel like a real course instead of a one-off
-chat. On the first real session for a topic, create a log file in the current
-directory: `learn-<topic-slug>.md`. On every return, read it first and resume
-exactly where they left off — greet them with where they are, not a blank page.
+chat. Keep a per-topic log, and adapt *where* it lives to the surface you're on:
+
+- **When you have a persistent working directory** (e.g. Claude Code in a repo):
+  create `learn-<topic-slug>.md` in the current directory. On every return, read
+  it first and resume exactly where they left off.
+- **When sessions don't share a filesystem** (e.g. Claude.ai / Claude Cowork,
+  where each chat starts fresh): produce the log as a **downloadable document**
+  the learner keeps — a Word/Markdown doc in Cowork, or an artifact they save.
+  At each session's end, hand them the updated log; at the start of a new one,
+  ask them to paste or re-upload it, then resume from it.
+
+Either way: greet a returning learner with *where they are*, not a blank page.
 
 Log schema:
 

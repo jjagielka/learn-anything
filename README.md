@@ -37,9 +37,10 @@ and the coach:
 
 Full playbooks: [`references/methods.md`](references/methods.md).
 
-## Install
+The same `SKILL.md` format runs on **Claude Code**, **claude.ai**, and **Claude
+Cowork** — pick the install path for your surface.
 
-Copy the skill into your Claude Code skills directory:
+### Claude Code (filesystem)
 
 ```bash
 git clone https://github.com/jjagielka/learn-anything.git
@@ -49,6 +50,24 @@ cp -r learn-anything/SKILL.md learn-anything/references ~/.claude/skills/learn-a
 
 Per-project instead of global? Copy the same files into
 `.claude/skills/learn-anything/` inside a project.
+
+### Claude.ai / Claude Cowork (zip upload)
+
+Cowork and claude.ai install custom skills as a **zip**. Build one from the repo:
+
+```bash
+git clone https://github.com/jjagielka/learn-anything.git
+cd learn-anything
+zip -r learn-anything.zip SKILL.md references
+```
+
+Then upload `learn-anything.zip` via **Settings → Features → Skills** (requires
+code execution / file creation enabled on your plan).
+
+> Cowork adapts the skill to its surface: the progress log and cheat sheet come
+> back as downloadable Word/Markdown documents. Because Cowork chats don't share
+> a filesystem, keep the log the coach hands you and re-upload it to resume a
+> topic in a new session.
 
 ## Use
 
