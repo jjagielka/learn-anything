@@ -35,8 +35,7 @@ and the coach:
 | **Find the signal** | The 5 highest-leverage resources for *your* goal and level |
 | **Feynman loop** | Explain-it-back until every gap in your understanding is closed |
 
-Source framework: [`prompt.md`](prompt.md). Full playbooks:
-[`references/methods.md`](references/methods.md).
+Full playbooks: [`references/methods.md`](references/methods.md).
 
 ## Install
 
@@ -67,7 +66,6 @@ plan for Z"*, *"explain W like I'm 12"*. The skill auto-triggers.
 ```
 SKILL.md              coach persona, orchestration, progress-log schema
 references/methods.md  full playbook for each of the six methods
-prompt.md              the source framework the skill is built on
 ```
 
 ## Why it works
